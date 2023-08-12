@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Roboto+Condensed:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img class="logo" src="img/Logo.png" alt="Logo">
+    </header>
+    <main>
+        <section class="section-1">
+            <textarea class="text-area" id="text-area" cols="30" rows="10" placeholder="Ingrese el texto que desee aquí"></textarea>
+            <div class="information">
+                <p>&#x24D8 Solo letras minusculas y sin acento.</p>
+            </div>
+            <div class="btns">
+                <button class="btn-encriptar" type="button" onclick="encriptar()">Encriptar</button>
+                <button class="btn-desencriptar"  type="button" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="section-2">
+            <img src="img/Muñeco.png" alt="" id="munheco">
+            <div class="mensaje-encriptado" id="mensaje-encriptado">
+                <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
+                <p id="parrafo">Ingresa el texto que deseas encripatar o desencriptar</p>
+            </div>
+            <div class="btn-copiar">
+                <button class="copy" id="copy" onclick="copiar()">
+                    Copiar
+                </button>
+            </div>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
